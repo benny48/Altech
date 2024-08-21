@@ -1,0 +1,29 @@
+<odoo>
+    <record id="view_supplier_form" model="ir.ui.view">
+        <field name="name">material.supplier.form</field>
+        <field name="model">material.supplier</field>
+        <field name="arch" type="xml">
+            <form string="Supplier Form">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="address"/>
+                        <field name="phone"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_supplier_tree" model="ir.ui.view">
+        <field name="name">material.supplier.tree</field>
+        <field name="model">material.supplier</field>
+        <field name="arch" type="xml">
+            <tree string="Supplier List">
+                <field name="name"/>
+                <field name="address"/>
+                <field name="phone"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

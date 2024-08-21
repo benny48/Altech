@@ -1,0 +1,17 @@
+<odoo>
+    <!-- Parent Menu for Material Management -->
+    <menuitem id="menu_material_management" name="Material Management" sequence="10"/>
+
+    <!-- Root Menu for Suppliers -->
+    <menuitem id="menu_supplier_root" name="Suppliers" parent="menu_material_management" sequence="10"/>
+
+    <!-- Submenu for Managing Suppliers -->
+    <menuitem id="menu_supplier" name="Manage Suppliers" parent="menu_supplier_root" action="action_supplier" sequence="10"/>
+
+    <!-- Action for Managing Suppliers -->
+    <record id="action_supplier" model="ir.actions.act_window">
+        <field name="name">Suppliers</field>
+        <field name="res_model">material.supplier</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
